@@ -21,15 +21,13 @@ class _Home_PageState extends State<Home_Page> {
     print(darkmode);
 
     List<String> Gambar = [
-      "1.png",
-      "2.png",
-      "3.png",
+      "1.jpg",
+      "2.jpg",
+      "3.jpg",
       "4.jpg",
-      "5.png",
-      "6.png",
+      "5.jpg",
+      "6.jpg",
     ];
-
-    
 
     return Scaffold(
       appBar: AppBar(
@@ -39,7 +37,7 @@ class _Home_PageState extends State<Home_Page> {
           textAlign: TextAlign.center,
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
-        backgroundColor: Color.fromARGB(255, 207, 53, 51),
+        backgroundColor: Color.fromARGB(255, 181, 40, 106),
         actions: [
           Padding(padding: EdgeInsets.only(left: 50)),
           IconButton(
@@ -89,12 +87,13 @@ class _Home_PageState extends State<Home_Page> {
           const Padding(
             padding: EdgeInsets.only(right: 230),
             child: Text(
-              'Top Sneakers',
+              'Lip Products',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black),
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                // color: Colors.black
+              ),
             ),
           ),
           Padding(padding: EdgeInsets.only(bottom: 5)),
@@ -142,7 +141,7 @@ class _Home_PageState extends State<Home_Page> {
         ],
       ),
       bottomNavigationBar: ConvexAppBar(
-        backgroundColor: Color.fromARGB(255, 207, 53, 51),
+        backgroundColor: Color.fromARGB(255, 181, 40, 106),
         items: [
           TabItem(icon: Icons.shopping_bag_rounded, title: 'shop'),
           TabItem(icon: Icons.message_rounded, title: 'Message'),

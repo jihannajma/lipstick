@@ -1,9 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:praktikum3/login_page.dart';
 
 class OnboardingPage extends StatefulWidget {
-  const OnboardingPage({Key? key,}) : super(key: key);
+  const OnboardingPage({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<OnboardingPage> createState() => _OnboardingPageState();
@@ -21,19 +22,27 @@ class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        child: Column(
+        body: Container(
+      width: double.infinity,
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height: 20,),
-          
-          Image.asset('assets/images/logo3.png', height: 90, width: 98),
+          SizedBox(
+            height: 20,
+          ),
 
-          SizedBox(height: 20,),
+          Image.asset('assets/images/lipp2.png', height: 90, width: 98),
 
-          Image.asset('assets/images/shoes.png', height: 280, width: 280,),
-          
+          SizedBox(
+            height: 20,
+          ),
+
+          Image.asset(
+            'assets/images/LIP2.png',
+            height: 280,
+            width: 280,
+          ),
+
           // Container(
           //   width: 150,
           //   height: 150,
@@ -50,85 +59,99 @@ class _OnboardingPageState extends State<OnboardingPage> {
           //     backgroundImage: AssetImage('assets/images/gambar.png', ),
           //   ),
           // ),
-        
-          SizedBox(height: 20,),
 
-          
-          Text('All your \n favourite Sneakers', textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
+          SizedBox(
+            height: 20,
+          ),
+
+          Text(
+            'All your \n favourite lipsticks',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
             ),
           ),
 
-          SizedBox(height: 10,),
-          
-          Text('Improve your looks from our \n Best Sneakers', 
-          textAlign: TextAlign.center, 
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.normal,
-            color: Colors.black.withOpacity(0.5),
+          SizedBox(
+            height: 10,
           ),
+
+          Text(
+            'Every lips deserve all the love and attention \n dresses in pretty colors',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.normal,
+              // color: Colors.black.withOpacity(0.5),
+            ),
           ),
-          
-          SizedBox(height: 50,),
+
+          SizedBox(
+            height: 50,
+          ),
 
           SizedBox(
             height: 55,
             width: 320,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-              primary: Color.fromARGB(255, 207, 53, 51),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
+                primary: Color.fromARGB(255, 181, 40, 106),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
               ),
-            ),
-            onPressed:(){
-              print("tesss");
-              // Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
-              Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage(setTheme: setTheme,)));
-            },
-            
-            child: const Text(
-              'Sign Up',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: Colors.white
+              onPressed: () {
+                print("tesss");
+                // Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoginPage(
+                              setTheme: setTheme,
+                            )));
+              },
+              child: const Text(
+                'Sign Up',
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
-            ),
             ),
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
 
           SizedBox(
             height: 55,
             width: 320,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-              primary: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
+                  primary: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  side: BorderSide(color: Colors.grey)),
+              onPressed: () {
+                print("tesss");
+                // Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoginPage(setTheme: setTheme)));
+              },
+              child: const Text(
+                'Login',
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromRGBO(255, 181, 40, 106)),
               ),
-              side: BorderSide(color: Colors.grey)
-            ),
-            onPressed:(){
-              print("tesss");
-              // Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
-              Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage(setTheme: setTheme)));
-            },
-            child: const Text(
-              'Login',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: Color.fromRGBO(207, 53, 51, 100)
-              ),
-            ),
             ),
           ),
-          
+
           // Container(
           //   width: 320,
           //   height: 55,
@@ -142,7 +165,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           //     onPressed: () {
           //       print('Sign in');
           //     },
-          //     child: Text('Sign in', 
+          //     child: Text('Sign in',
           //     style: TextStyle(
           //       color: Color.fromARGB(255, 255, 255, 255),
           //       fontSize: 18,
@@ -151,7 +174,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           //     ),
           //   ),
           // ),
-          
+
           //button bawah
           // RaisedButton(padding: EdgeInsets.symmetric(vertical: 21, horizontal: 130),
           //   onPressed: (){
@@ -166,13 +189,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
           //   ),
           // ),
           // )
-
-
-          
         ],
       ),
-      )
-      
-    );
+    ));
   }
 }
